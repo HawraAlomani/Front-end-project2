@@ -1,0 +1,181 @@
+body {
+  background-color: black;
+  background-image: url("/src/components/images/background1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.content1 {
+  height: 100vh;
+  overflow: hidden;
+}
+.box1 ul li {
+  z-index: -1;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  list-style: none;
+  opacity: 0;
+  background: radial-gradient(
+    rgba(251, 244, 147, 0.735),
+    transparent,
+    transparent
+  );
+  bottom: 0;
+  left: 10vw;
+  animation: animate 15s linear infinite;
+}
+.box1 ul li:nth-child(2) {
+  left: 37vw;
+  animation-delay: 2s;
+}
+.box1 ul li:nth-child(1) {
+  right: 5vw;
+  animation-delay: 6s;
+}
+
+.box1 ul li:nth-child(3) {
+  left: 25vw;
+  animation-delay: 4s;
+}
+.box1 ul li:nth-child(4) {
+  left: 60vw;
+  animation-delay: 6s;
+}
+
+.box1 ul li:nth-child(5) {
+  left: 75vw;
+  animation-delay: 4s;
+}
+.box1 ul li:nth-child(6) {
+  left: 40vw;
+  animation-delay: 5s;
+}
+.box1 ul li:nth-child(7) {
+  right: 70vw;
+  animation-delay: 10s;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+    bottom: 0;
+  }
+  100% {
+    transform: scale(10);
+    opacity: 0;
+    bottom: 100vh;
+  }
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  grid-template-rows: 0.5fr repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 6 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 6;
+}
+.div3 {
+  grid-area: 2 / 2 / 6 / 6;
+  height: 50%;
+  overflow-y: scroll;
+}
+
+#logo {
+  width: 50vh;
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Allura&family=Great+Vibes&family=Julius+Sans+One&family=Raleway:ital,wght@0,100;0,500;0,700;1,100;1,700&family=The+Nautigal&display=swap");
+li a {
+  border: 1px solid white;
+  padding: 2px 10px 2px 10px;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  width: 50px;
+  font-family: "Abril Fatface", cursive;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.392);
+}
+li a:hover {
+  border: 1px solid black;
+}
+li {
+  display: inline-table;
+  margin-top: 25px;
+}
+nav {
+  margin-top: 20px;
+  text-align: justify;
+  float: left;
+}
+
+#card {
+  transition: 0.3s;
+  margin-bottom: 15px;
+}
+
+.container {
+  border: 1.5px solid rgb(255, 255, 255);
+  padding: 7px 7px;
+  background-color: rgb(255, 255, 255);
+  width: 700px;
+  height: 152px;
+  background-clip: content-box;
+  box-shadow: 1px 1px 20px #000000;
+}
+.column {
+  float: left;
+  padding: 0 10px;
+}
+
+.cardslist {
+  display: inline;
+  float: none;
+}
+#imgCard {
+  border: 1px solid rgb(255, 255, 255);
+  width: 150px;
+  float: left;
+}
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Allura&family=Great+Vibes&family=Julius+Sans+One&family=Raleway:ital,wght@0,100;0,500;0,700;1,100;1,700&family=Tajawal:wght@300&family=The+Nautigal&display=swap");
+#cardinfo {
+  font-family: "Tajawal", sans-serif;
+  float: left;
+  margin-left: 10px;
+}
+#playBtn {
+  display: block;
+  border: 1px solid rgb(177, 174, 11);
+  background-color: rgb(215, 193, 49);
+  font-family: sans-serif;
+  padding: 5px;
+  border-radius: 2px;
+  text-align: center;
+  align-content: center;
+  margin-top: -15px;
+  margin-left: 25%;
+  margin-right: 25%;
+  box-shadow: 1px 1px rgb(228, 188, 25);
+  color: rgb(255, 255, 255);
+}
+#playBtn:hover{
+    color:  rgb(228, 188, 25);
+    background-color: rgb(255, 255, 255);
+}
